@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-image: no-repeat;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+}
+
+.container {
+    margin: 8% auto;
+    width: 35%;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+.toggleImg {
+    margin: 0;
+    padding: 0;
+}
+
+form input{
+    width: 100%;
+    padding: 3%;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 5%;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    border-radius: 3px;
+}
+
+.task {
+    cursor: pointer;
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskContent {
+    display: flex;
+}
+
+.task input {
+    margin-right: 10px;
+    appearance: none;
+    border-radius: 100%;
+    align-self: center;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.gradient{
+    background: no-repeat url('./images/icon-check.svg'), linear-gradient( hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-position: center center;
+}
+
+.crossout {
+    text-decoration: line-through;
+}
+
+.bottomStats {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    color:hsl(234, 11%, 52%);
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    color: hsl(234, 11%, 52%);
+}
+
+.blue {
+    color: blue;
+}
+
+footer {
+    color: hsl(234, 11%, 52%);   
+    margin: 5% auto;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
 }
